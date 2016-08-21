@@ -40,7 +40,7 @@ blockquote,th,td {padding: 0;margin: 0;}
 .ty_recommend .ty_recommendDetail div p{font-size: 12px;word-break: break-all;text-align:justify;
     padding: 0 8px 10px 8px;}
 
-/* 社区 */
+/* 个人中心 */
 #personal{position: relative;top:0;}
 #personal .ty_sq_avatar{width: 70%;height: 300px;position: relative;top:0;left:15%;/*background-color: #ff0000;*/}
 #personal .ty_sq_avatar div:first-child{width:100px;height:28px;line-height:28px;border:1px solid #46a1e1;float: right;margin: 20px 15% 0 0;
@@ -49,7 +49,7 @@ blockquote,th,td {padding: 0;margin: 0;}
 #personal .ty_sq_avatar .ty_sq_avatarImg img{width: 220px;height: 220px;margin: 20px 0 0 0;border: 1px solid #909090;
     -webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
 #personal .ty_sq_avatar .ty_sq_avatarImg p{height: 40px;line-height: 40px;font-size: 18px}
-#personal .ty_sq_avatar .ty_sq_modify{width:150px;height: 470px;text-align: center;position: absolute;top:30px;left: 0; }
+#personal .ty_sq_avatar .ty_sq_modify{width:150px;height: 470px;text-align: center;position: absolute;top:30px;left: 0; z-index: 99;}
 #personal .ty_sq_avatar .ty_sq_modify p:first-child{text-align: left;cursor: pointer;}
 #personal .ty_sq_avatar .ty_sq_modify p:first-child img{width: 20px;height: 20px;margin-left: -30px;}
 #personal .ty_sq_avatar .ty_sq_modify div{width: 150px;height:450px;text-align: center;border: 1px solid #46a1e1;background-color: #ffffff;}
@@ -58,11 +58,25 @@ blockquote,th,td {padding: 0;margin: 0;}
 #personal .ty_sq_avatar .ty_sq_modify p{text-align: center;color: #46a1e1;font-size: 14px;}
 #personal .ty_sq_avatar .ty_sq_modify button{width:100px;height:30px;border: none;background-color: #46a1e1;color: #ffffff;
     -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin: 5px auto;}
-#personal .ty_sq_tab{width: 70%;height:50px;line-height:50px;text-align: center;position: relative;left: 15%;top:0;background-color: #ff0000;}
-#personal .ty_sq_tab ul{width: 100%;height: 100%;}
-#personal .ty_sq_tab ul li{width: 80px;height:50px;line-height:50px;list-style-type: none;float: left;}
-
-
-
+#personal .ty_sq_tab{width: 70%;height:80px;line-height:80px;text-align: center;position: relative;left: 15%;top:0;background-color: #ff0000;}
+#personal .ty_sq_tab ul{width: 550px;height: 100%;margin: 0 auto;color:#46a1e1;}
+#personal .ty_sq_tab ul li{width: 110px;height:80px;line-height:80px;list-style-type: none;float: left;}
+#personal .tab_on{color: #000000;}
+#personal  #per_iframe{width: 70%;height:200px;position: relative;left: 15%;top:0;/*background-color: #00ff00;*/}
+/* 选择院校 */
+#per_school_dialog{width: 600px;height: 300px;min-width: 600px;position: absolute;left:30%;top:160px;background-color: #ffffff;z-index: 999;
+    border: 1px solid #46a1e1;}
+#per_school_dialog div{width: 100%;}
+#per_school_dialog div:first-child{height: 30px;line-height:30px;color: #ffffff;background-color: #46a1e1;font-size: 14px;}
+#per_school_dialog div:nth-child(2){height: 50px;line-height: 50px;text-align: center;}
+#per_school_dialog div:nth-child(2) select{width:70px;height: 25px;line-height: 30px;text-align: center;border: 1px solid #46a1e1;}
+#per_school_dialog div:nth-child(3){height: 160px;padding: 5px 0px;overflow :auto;border-top: 1px solid #cccccc;border-bottom: 1px solid #cccccc;}
+#per_school_dialog div:nth-child(3) table{width: 100%;height: 100%;font-size: 14px;text-align: center;}
+#per_school_dialog div:nth-child(3) table tr{}
+#per_school_dialog div:nth-child(3) table tr td{width: 150px;height: 30px;line-height: 30px;text-align: center;cursor: pointer;margin: 2px 25px;}
+#per_school_dialog div:nth-child(4){height: 50px;line-height: 50px;text-align: right;}
+#per_school_dialog div:nth-child(4) button{width: 60px;height: 30px;margin-right: 10px;background-color: #46a1e1;color: #ffffff;text-align: center;
+    font-size:16px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border: none;}
+.schoolOn{background-color: #46a1e1;color: #ffffff;}
 
 

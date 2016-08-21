@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
     <script language="JavaScript" src="../js/libs/jquery-2.1.4.js"></script>
     <script language="JavaScript" src="../js/public.js"></script>
-    <script language="JavaScript" src="../js/shequ.js"></script>
+    <script language="JavaScript" src="../js/personal.js"></script>
 </head>
 <body>
 <div class="wid_100 bg_deepBlue">
@@ -24,8 +24,8 @@
                     <img class="hide" src="../images/navflag.png" alt="" />
                 </li>
                 <li>
-                    <a href=""><p class="on">社区</p></a>
-                    <img class="show" src="../images/navflag.png" alt="" />
+                    <a href=""><p>社区</p></a>
+                    <img class="hide" src="../images/navflag.png" alt="" />
                 </li>
                 <li>
                     <a href=""><p>帮助</p></a>
@@ -33,11 +33,11 @@
                 </li>
             </ul>
         </div>
-        <div class="ty_login show">
+        <div class="ty_login hide">
             <span>登录</span>
             <span>注册</span>
         </div>
-        <div class="ty_avatar hide">
+        <div class="ty_avatar show">
                 <span>
                     <img src="../images/girl.jpg" alt=""/>
                     <div>2</div>
@@ -67,12 +67,15 @@
         </div>
         <div class="ty_sq_tab">
             <ul>
-                <li>我的比赛</li>
+                <li class="tab_on">我的比赛</li>
                 <li>我的消息</li>
                 <li>我的收藏</li>
                 <li>我的档案</li>
                 <li>我的密码</li>
             </ul>
+        </div>
+        <div id="per_iframeDiv">
+            <iframe src="personal_info.html" id="per_iframe" frameborder="0" scrolling="auto"></iframe>
         </div>
 </div>
 
@@ -103,6 +106,58 @@
     <div class="ty_copyRight">
         ©2013-2016 DataCastle蜀ICP备14018015号-2
     </div>
+
+    <!-- 选择学校 -->
+    <div id="per_school_dialog" class="show">
+        <div>&nbsp; 请选择学校</div>
+        <div>
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">南京</option>
+            </select>
+            <span>如果没有选择项，请选择其他手动填写</span>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td class="schoolOn">清华大学</td>
+                    <td>中国地质大学</td>
+                    <td>北京邮电大学</td>
+                </tr>
+                <tr>
+                    <td>北京交通大学</td>
+                    <td>北京工业大学</td>
+                    <td>北京师范大学</td>
+                </tr>
+                <tr>
+                    <td>中国传媒大学</td>
+                    <td>中国政法大学</td>
+                    <td>中国石油大学</td>
+                </tr>
+                <tr>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                </tr>
+                <tr>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                </tr>
+                <tr>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                    <td>中国地质大学</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button>确定</button>
+            <button>取消</button>
+        </div>
+    </div>
+
     <!-- 登录 -->
     <div id="ty_mask" class="hide"></div>            <!-- 蒙版 -->
     <div  id="ty_login" class="hide">

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>腾云俱乐部</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css" type="text/css" />
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../css/personal.css" type="text/css" />
+    <script language="JavaScript" src="../js/libs/jquery-2.1.4.js"></script>
+    <script language="JavaScript" src="../js/libs/jquery-ui.js"></script>
+    <script language="JavaScript" src="../js/personal_info.js"></script>
+</head>
+<body>
+    <div id="ty_per_info">
+        <table>
+            <tr>
+                <td>*竞技场花名：</td>
+                <td><input type="text"/></td>
+                <td class="hide2">花名不能为空</td>
+            </tr>
+            <tr>
+                <td>*真实姓名：</td>
+                <td><input type="text"/></td>
+                <td class="hide2">姓名不能为空</td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <div class="ty_per_choose bg_lightBlue"></div><span>男</span>
+                    <div class="ty_per_choose bg_white"></div><span>女</span>
+                </td>
+            </tr>
+            <tr>
+                <td>年龄：</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>星座：</td>
+                <td><select name="xingzuo" id="per_xingzuo">
+                    <option value="">请选择</option>
+                    <option value="水瓶座">水瓶座</option>
+                    <option value="双鱼座">双鱼座</option>
+                    <option value="白羊座">白羊座</option>
+                    <option value="金牛座">金牛座</option>
+                    <option value="双子座">双子座</option>
+                    <option value="巨蟹座">巨蟹座</option>
+                    <option value="狮子座">狮子座</option>
+                    <option value="处女座">处女座</option>
+                    <option value="天秤座">天秤座</option>
+                    <option value="天蝎座">天蝎座</option>
+                    <option value="射手座">射手座</option>
+                    <option value="摩羯座">摩羯座</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>*邮箱：</td>
+                <td><input type="text"/></td>
+                <td class="hide2">请输入正确邮箱</td>
+            </tr>
+            <tr>
+                <td>*电话：</td>
+                <td><input type="text"/></td>
+                <td class="hide2">请输入正确电话号码</td>
+            </tr>
+            <tr>
+                <td>*在读或毕业院校：</td>
+                <td id="per_school"><input type="text" value="" /></td>
+                <td class="hide2">该项不能为空</td>
+            </tr>
+            <tr>
+                <td>*专业：</td>
+                <td><input type="text"/></td>
+                <td class="hide2">该项不能为空</td>
+            </tr>
+            <tr>
+                <td>所在地：</td>
+                <td><input type="text"/></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

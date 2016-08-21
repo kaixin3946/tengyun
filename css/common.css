@@ -18,10 +18,15 @@ body{width: 100%;height: 100%;/*background-color: #0000ff;*/min-width: 980px;}
 .fl{float: left;}
 .fr{float: right;}
 .bg_deepBlue{background-color: #222e36;}    /* 导航深色背景 */
+.bg_lightBlue{background-color: #46a1e1;}
+.bg_white{background-color: #ffffff;}
 .col_blue{color: #719ab5}   /*导航字颜色*/
 .col_white{color: #ffffff}  /* 白色字体 */
 .show{display: block}
 .hide{display: none}
+.show2{visibility: visible;}
+.hide2{visibility: hidden;}
+
 .posA{position: absolute;}
 .posR{position: relative}
 
@@ -63,7 +68,7 @@ body{width: 100%;height: 100%;/*background-color: #0000ff;*/min-width: 980px;}
     line-height: 30px;}
 
 /* 登录和注册 */
-#ty_mask{width:100%;height:100%;position: absolute;top: 0;left: 0;z-index: 100;background-color:#e1e6f6;filter:alpha(opacity:85);opacity:0.85;}
+#ty_mask{width:100%;height:100%;position: fixed;top: 0;left: 0;z-index: 100;background-color:#e1e6f6;filter:alpha(opacity:85);opacity:0.85;}
 #ty_login{width: 400px;height: 300px;min-width: 400px;position: absolute;left:35%;top:160px;background-color: #ffffff;z-index: 102;
     border: 1px solid #909090;}
 #ty_login h3{width: 100%;height: 50px;line-height:50px;text-align: center;font-size: 22px;color:#46a1e1;}
