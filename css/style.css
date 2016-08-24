@@ -58,10 +58,12 @@ blockquote,th,td {padding: 0;margin: 0;}
 #personal .ty_sq_avatar .ty_sq_modify p{text-align: center;color: #46a1e1;font-size: 14px;}
 #personal .ty_sq_avatar .ty_sq_modify button{width:100px;height:30px;border: none;background-color: #46a1e1;color: #ffffff;
     -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin: 5px auto;}
-#personal .ty_sq_tab{width: 70%;height:80px;line-height:80px;text-align: center;position: relative;left: 15%;top:0;background-color: #ff0000;}
+#personal .ty_sq_tab{width: 70%;height:80px;line-height:80px;text-align: center;position: relative;left: 15%;top:0;/*background-color: #ff0000;*/}
 #personal .ty_sq_tab ul{width: 550px;height: 100%;margin: 0 auto;color:#46a1e1;}
-#personal .ty_sq_tab ul li{width: 110px;height:80px;line-height:80px;list-style-type: none;float: left;}
+#personal .ty_sq_tab ul li{width: 110px;height:80px;line-height:80px;list-style-type: none;float: left;
+    cursor: pointer;/*background-color: #ff0000;*/}
 #personal .tab_on{color: #000000;}
+/*#personal  #per_iframeDiv{width: 70%;}*/
 #personal  #per_iframe{width: 70%;height:200px;position: relative;left: 15%;top:0;/*background-color: #00ff00;*/}
 /* 选择院校 */
 #per_school_dialog{width: 600px;height: 300px;min-width: 600px;position: absolute;left:30%;top:160px;background-color: #ffffff;z-index: 999;
@@ -78,5 +80,105 @@ blockquote,th,td {padding: 0;margin: 0;}
 #per_school_dialog div:nth-child(4) button{width: 60px;height: 30px;margin-right: 10px;background-color: #46a1e1;color: #ffffff;text-align: center;
     font-size:16px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border: none;}
 .schoolOn{background-color: #46a1e1;color: #ffffff;}
+
+
+
+/*竞赛*/
+.con_banner{height: 540px;background: url("../images/contest/banner.png") no-repeat center;}
+
+.con_info_banner{height: 400px;background: url("../images/contest/info_banner.png") no-repeat center;}
+.con_info_context{width: 70%; margin:0 auto;}
+.con_info_context .bread{font-size: 16px; margin:30px 0;}
+.con_info_context .bread span{color: #46a1e1;}
+.con_info_context h1{width: 100%; color: #46a1e1; font-size: 36px; font-weight: 700; text-align: center; margin:30px 0px;}
+.con_info_context .progress{height: 75px; width: 100%; padding: 0px 8px;}
+.con_info_context .progress .bargray{background-color: #d2dee5; height: 10px; margin:0px 20px; position: relative;}
+.con_info_context .progress .barblue{background-color: #46a1e1; width: 50%; height: 10px; position: absolute; left: 0; top: 0;}
+.con_info_context .progress .barcircle{background: #ffffff; width:10px; height: 10px; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; border: 5px solid #d2dee5; position: absolute; left: -1%; top: -5px;}
+.con_info_context .progress .barcircle_on{border-color: #46a1e1;}
+.con_info_context .progress .barcircle2{left: 24%;}
+.con_info_context .progress .barcircle3{left: 49%;}
+.con_info_context .progress .barcircle4{left: 74%;}
+.con_info_context .progress .barcircle5{left: 99%;}
+.con_info_context .progress .barfont{width: 100px;color: #46a1e1; font-size: 16px; line-height: 24px; position: absolute; top:20px; left: -1%;}
+.con_info_context .progress .barfont2{left: 20%; text-align: center;}
+.con_info_context .progress .barfont3{left: 44%; text-align: center;}
+.con_info_context .progress .barfont4{left: 69%; text-align: center;}
+.con_info_context .progress .barfont5{left: 89%; text-align: right;}
+.con_info_context .text{ width: 100%; height: 2300px;}
+.con_info_context .text .textl{float: left; width:15%; padding-right: 5%;}
+.con_info_context .text .textl .textnav{height: 170px;}
+.con_info_context .text .textl .textnav h1{font-size: 24px; color: #333333; height: 20px; text-align: right; position: relative;}
+.con_info_context .text .textl .textnav p{font-size: 16px; color: #333333; height: 30px; text-align: right; position: relative;}
+.con_info_context .text .textl .textnav span{display: none; color:#46a1e1; position: absolute; right: -25px;}
+.con_info_context .text .textl .textnav span.on{display: inline;}
+.con_info_context .text .textl .textnav h1.on{color: #46a1e1;}
+.con_info_context .text .textl .textnav p.on{color: #46a1e1;}
+.con_info_context .text .textl .btn{display:block; background-color:#46a1e1; font-size:16px; color: #ffffff; width: 100%; height: 44px; line-height: 44px;  text-align: center; margin:20px 0px; }
+.con_info_context .text .textl .count{width: 100%; height: 50px; padding: 40px 0px;}
+.con_info_context .text .textl .count .num{float:left; width: 25px; height: 25px; background-color:#fd6f2a; margin-left: 5px; text-align: center; font-size: 20px; color: #ffffff; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; }
+.con_info_context .text .textl .count p{font-size: 14px; text-align: center; clear: both; padding-top: 10px; }
+.con_info_context .text .textr{padding-top:17px; float: left; padding-left: 5%; width: 74%; border-left: 1px solid #d9d9d9;}
+.con_info_context .text .textr a{display:block; padding-bottom: 50px;}
+.con_info_context .text .textr h1{font-weight:400; font-size: 20px; color: #46a1e1; height: 0px; line-height: 0px; text-align: left;}
+.con_info_context .text .textr p{font-size: 14px; color: #333333; line-height: 21px; }
+
+.con_join{width: 400px;height: 150px;min-width: 400px;position: absolute;left:35%;top:160px;background-color: #ffffff;z-index: 102;
+    border: 1px solid #909090;}
+.con_join p{width: 100%;height: 50px;line-height:50px;text-align: center;font-size: 16px;color:#333333; padding-top:20px;}
+.con_join button{display: block; width:40%; height:50px; border: none;margin: 10px auto;color: #ffffff; background-color: #46a1e1; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.con_sel{width: 500px;height: 300px;min-width: 400px;position: absolute;left:35%;top:160px;background-color: #ffffff;z-index: 102;
+    border: 1px solid #909090;}
+.con_sel p{width: 100%;height: 20px;line-height:20px;text-align: left;font-size: 16px;color:#333333; padding-left:20px; padding-top: 15px;}
+.con_sel .con_list{ width: 200px; height: 200px; float: left; }
+.con_sel .con_list1{ margin-left: 50px;}
+.con_sel .con_list span{ display: block; margin:20px auto; width: 110px; height: 110px; -webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%; background-color: #e2e2e2;}
+.con_sel .con_list a{ display: block; width: 70%; height: 40px; line-height: 40px; margin:0 auto; color: #ffffff; background-color: #46a1e1; text-align: center; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; cursor:not-allowed}
+
+/*报名参赛*/
+.con_build{position: relative; width: 70%; margin:0 auto;}
+.con_build .leader{font-size: 26px; color: #3366CC; position: absolute; left: 20%; top: 160px;}
+.con_build img{width: 110px; height: 110px; -webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%; background-color: #e2e2e2; position: absolute; left: 20%; top:20px; border: 1px solid #f2f2f2;}
+.con_build p {position: relative; padding-bottom: 50px;}
+.con_build p.texta{padding-bottom: 114px}
+.con_build p input{width: 300px; height: 36px; border: 1px solid #909090; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding-left: 3px; position: absolute; left: 40%;}
+.con_build p textarea{width: 300px; height: 100px; border: 1px solid #909090; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding-left: 3px; position: absolute; left: 40%;}
+.con_build p select{width: 300px; height: 36px; border: 1px solid #909090; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding-left: 3px; position: absolute; left: 40%;}
+.con_build p span{position: absolute; height: 36px; line-height: 36px; left: 33%;}
+.con_build button{display: block; width:20%; height:30px; border: none;color: #ffffff; background-color: #46a1e1; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-left: 40%;}
+.con_build h2{ font-size: 16px; font-weight: 400; position: absolute; left:62%; top:481px;}
+.con_build a{margin:30px auto; display: block; width:35%; height:40px; line-height:40px; border: none;color: #ffffff; background-color: #3366CC; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-left: 40%; text-align: center;}
+
+/*加入团队*/
+.contest_join h3{font-size: 16px; font-weight: 400; height: 20px; padding-top: 20px; padding-left: 50%;}
+.contest_join h4{font-size: 16px; font-weight: 400; width: 40%; height: 20px; margin:0 auto; padding-top: 30px; padding-bottom: 72px; padding-left: 10%; text-align: center;}
+.contest_join p input{width: 300px; height: 36px; border: 1px solid #909090; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding-left: 3px; position: absolute; left: 35%;}
+.contest_join a{ display: block; width:35%; height:40px; line-height:40px; border: none;color: #ffffff; background-color: #3366CC; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-left: 35%; text-align: center;}
+.contest_join p span{left: 35%; width: 40%;}
+
+/*下载数据*/
+#contest_data_t{width:600px;height:350px;margin:10px auto;padding-right:12px;overflow:hidden; border: 2px solid #3366CC;}
+#contest_data_t p{color:#333;font-size:12px;margin:30px 0;text-align:left;text-indent:2em;}
+.contest_data p{font-size: 16px; text-align: center; height: 20px; line-height: 20px; padding-bottom: 20px;}
+.contest_data a{margin:0 auto 20px; display: block; width:10%; height:30px; line-height:30px; border: none;color: #ffffff; background-color: #3366CC; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;text-align: center; cursor:not-allowed}
+
+/*提交*/
+.contest_submit p{ padding-left: 40%; font-size: 20px; color:#3366CC; height: 30px; line-height: 30px; padding-bottom: 10px; }
+.contest_submit p span{color: #333333; font-size: 16px; left: 50%; line-height: 30px;}
+.contest_submit p input{left: 45%; border: 0; padding-top: 15px;}
+
+/*排行榜*/
+.contest_rank p{text-align: center;}
+.contest_rank table{ border: 1px solid #46a1e1; margin:20px auto; -webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;}
+.contest_rank table tr td{padding:10px 20px;  text-align: center;}
+
+/* 帮助 */
+#help{width: 70%;position:relative;left:15%;top:0;/*background-color: #ff0000;*/margin-bottom: 30px;}
+#help h4{text-align: center;font-size: 20px;color: #46a1e1;padding: 20px 0;margin-top: 30px;}
+#help ul{}
+#help ul li{width: 100%;height: 100%;list-style-type: none;padding: 10px 5px;}
+#help ul li h5{font-size: 18px;}
+#help ul li p{font-size: 16px;word-break: break-all;margin-top: 10px;text-indent: 2em;}
+
 
 

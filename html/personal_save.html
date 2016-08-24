@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>腾云俱乐部</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="../css/jquery-ui.theme.css" type="text/css" />
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../css/personal.css" type="text/css" />
+    <script language="JavaScript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script language="JavaScript" src="../js/libs/jquery-ui.js"></script>
+    <script language="JavaScript" src="../js/personal_mes.js"></script>
+    <style>
+        .ui-widget-header{background: #eeeeee;border-left: none;border-top: none;border-right: none;}
+        .ui-widget-header{}
+    </style>
+</head>
+<body>
+    <div id="ty_per_save">
+        <div id="per_save_tabs">
+            <ul>
+                <li><a href="#save_fragment-1">帖子</a></li>
+                <li><a href="#save_fragment-2">比赛</a></li>
+            </ul>
+            <div id="save_fragment-1">
+                <ul>
+                    <li>
+                        <img src="../images/girl.jpg" alt=""/>
+                        <div>
+                            <h4>【猜你喜欢】[猜你喜欢]冠军，“yes，boy！”分享，含源代码</h4>
+                            <p>datacastle运营发表于<span>2016-08-21 19:00:02</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/girl.jpg" alt=""/>
+                        <div>
+                            <h4>【猜你喜欢】[猜你喜欢]冠军，“yes，boy！”分享，含源代码</h4>
+                            <p>datacastle运营发表于<span>2016-08-21 19:00:02</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/girl.jpg" alt=""/>
+                        <div>
+                            <h4>【猜你喜欢】[猜你喜欢]冠军，“yes，boy！”分享，含源代码</h4>
+                            <p>datacastle运营发表于<span>2016-08-21 19:00:02</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="save_fragment-2">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$(function(){
+    $("#per_save_tabs").tabs({
+        activate:function( event, ui ){
+            /* 每次点击设置高度 */
+            var iHeight=$("body").height()+30;
+            $('#per_iframe', window.parent.document).height(iHeight);
+        }
+    });
+
+
+})
+</script>
+</html>

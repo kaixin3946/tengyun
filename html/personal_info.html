@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/jquery-ui.theme.css" type="text/css" />
     <link rel="stylesheet" href="../css/common.css" type="text/css" />
     <link rel="stylesheet" href="../css/personal.css" type="text/css" />
-    <script language="JavaScript" src="../js/libs/jquery-2.1.4.js"></script>
+    <script language="JavaScript" src="../js/libs/jquery-1.8.3.js"></script>
     <script language="JavaScript" src="../js/libs/jquery-ui.js"></script>
     <script language="JavaScript" src="../js/personal_info.js"></script>
 </head>
@@ -27,8 +27,10 @@
             <tr>
                 <td>性别：</td>
                 <td>
-                    <div class="ty_per_choose bg_lightBlue"></div><span>男</span>
-                    <div class="ty_per_choose bg_white"></div><span>女</span>
+                    <input class="radio" type="radio" name="sex" id="sex_male" value="sex" checked>
+                    <label for="sex_male">男</label>
+                    <input class="radio" type="radio" name="sex" id="sex_female" value="sex" >
+                    <label for="sex_female">女</label>
                 </td>
             </tr>
             <tr>
@@ -75,7 +77,112 @@
             </tr>
             <tr>
                 <td>所在地：</td>
+                <td><input type="text" placeholder="请选择所在城市"/></td>
+            </tr>
+            <tr>
+                <td>个人状态：</td>
+                <td>
+                    <input class="radio" type="radio" name="state" id="state_zaidu" value="state" checked>
+                    <label for="state_zaidu">在读</label>
+                    <input class="radio" type="radio" name="state" id="state_zaizhi" value="state" checked>
+                    <label for="state_zaizhi">在职</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: left;padding-left: 35px;">
+                    <input class="radio" type="radio" name="state" id="state_ziyou" value="state" checked>
+                    <label for="state_ziyou" style="width: 100px;">自由职业者</label>
+                </td>
+            </tr>
+            <tr>
+                <td>学历：</td>
+                <td><select name="xueli" id="per_xueli">
+                    <option value="">请选择</option>
+                    <option value="本科">本科</option>
+                    <option value="硕士">硕士</option>
+                    <option value="博士">博士</option>
+                    <option value="大专">大专</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>在读时间：</td>
+                <td>
+                    <input type="text" id="startTime"  placeholder="开始时间"/>
+                    <input type="text" id="endTime" placeholder="结束时间"/>
+                </td>
+            </tr>
+            <tr>
+                <td>社交站点：</td>
+                <td><input type="text" placeholder="请输入社交站点网址"/></td>
+            </tr>
+            <tr>
+                <td>我的技能：</td>
+                <td>
+                    <div id="info_accordionParent">
+                        <div id="info_accordion">
+                            <h3>程序语言</h3>
+                            <div>
+                                <ul>
+                                    <li>c/c++</li>
+                                    <li>c#</li>
+                                    <li>java</li>
+                                    <li>php</li>
+                                </ul>
+                            </div>
+                            <h3>数据处理</h3>
+                            <div>
+                                <li>抽样设计</li>
+                                <li>因子分析</li>
+                                <li>复杂调查数据</li>
+                            </div>
+                            <h3>统计工具</h3>
+                            <div>
+                                <ul>
+                                    <li>spss</li>
+                                    <li>e-plus</li>
+                                    <li>clementine</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" id="info_tag" placeholder="输入自定义标签"/>
+                        </div>
+                    </div>
+                    <div id="info_area">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>*证件：</td>
+                <td>
+                    <input class="radio" type="radio" name="file" id="file_people" value="file" checked>
+                    <label for="file_people">身份证</label>
+                    <input class="radio" type="radio" name="file" id="file_student" value="file">
+                    <label for="file_people">学生证</label>
+                </td>
+            </tr>
+            <tr>
+                <td>证件号码：</td>
                 <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>上传证件照正面：</td>
+                <td><button id="info_upload">浏览</button><input type="file" id="up"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="info_card"><img id="ImgPr" width="290" height="200" /></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="info_save">
+                    <input type="button" class="wid130" value="保存"/>
+                    <input type="button" class="wid130" value="申请认证"/>
+                </td>
             </tr>
         </table>
     </div>
