@@ -95,6 +95,9 @@ $(function(){
         $(".ty_avatar").first().removeClass("hide").addClass("show");
     })
 
+
+
+
     /* 下载量、访问量滚动 */
     setInterval(function(){
         setNumber($(".t_num1"), Math.floor(Math.random() * 1000000));       //这里放入后台取回的数据

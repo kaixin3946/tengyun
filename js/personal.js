@@ -17,7 +17,18 @@ $(function(){
 
     /* 显示点击修改 */
     $("#personal .ty_sq_avatar .ty_sq_modify").find("p").first().click(function(){
-        $("#personal .ty_sq_avatar .ty_sq_modify").find("div").toggle();
+        /*$("#personal .ty_sq_avatar .ty_sq_modify").find("div").toggle();*/
+        var oDiv=$("#personal .ty_sq_avatar .ty_sq_modify").find("div");
+        if(oDiv .hasClass("hide")){
+            oDiv.parent().css("z-index","99");
+            oDiv.removeClass("hide").addClass("show");
+
+        }else{
+            oDiv.parent().css("z-index","4");
+            oDiv.removeClass("show").addClass("hide");
+
+        }
+
     })
 
     /* 设置iframe 的高度 */

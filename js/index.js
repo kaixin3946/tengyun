@@ -26,20 +26,7 @@ $(function(){
         }
     }
 
-    $(".ty_avatar").first().find("img").first().click(function(){
-        window.location="personal.html";
-    });
 
-    $(".ty_navList").first().find("li").eq(1).click(function(){
-        /*window.location.href="contest.html";*/
-        window.open("contest.html");
-    });
-    $(".ty_navList").first().find("li").eq(0).click(function(){
-        window.location="index.html";
-    });
-    $(".ty_navList").first().find("li").eq(3).click(function(){
-        window.open("help.html");
-    });
 })
 
 

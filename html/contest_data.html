@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
     <script language="JavaScript" src="../js/libs/jquery-2.1.4.js"></script>
     <script language="JavaScript" src="../js/public.js"></script>
-    <script language="JavaScript" src="../js/index.js"></script>
+    <script language="JavaScript" src="../js/jquery.nicescroll.js"></script>
+    <script language="JavaScript" src="../js/contest_data.js"></script>
 </head>
 <body>
     <div class="wid_100 bg_deepBlue">
@@ -16,19 +17,19 @@
             <div class="ty_navList">
                 <ul>
                     <li>
-                        <a href="index.html"><p class="on">首页</p></a>
+                        <a href="index.html"><p>首页</p></a>
+                        <img class="hide" src="../images/navflag.png" alt="" />
+                    </li>
+                    <li>
+                        <a href="contest.html"><p class="on">竞赛</p></a>
                         <img class="show" src="../images/navflag.png" alt="" />
                     </li>
                     <li>
-                        <a href="contest.html"><p>竞赛</p></a>
+                        <a href=""><p>社区</p></a>
                         <img class="hide" src="../images/navflag.png" alt="" />
                     </li>
                     <li>
-                        <a href="community.html"><p>社区</p></a>
-                        <img class="hide" src="../images/navflag.png" alt="" />
-                    </li>
-                    <li>
-                        <a href="help.html"><p>帮助</p></a>
+                        <a href=""><p>帮助</p></a>
                         <img class="hide" src="../images/navflag.png" alt="" />
                     </li>
                 </ul>
@@ -48,71 +49,48 @@
     </div>
 
     <div class="container">
-        <div class="ty_apply">
-            <table>
-                <tr>
-                    <td><img src="../images/shouye/jiangbei.png" alt=""/></td>
-                </tr>
-                <tr>
-                    <td><p>Big Data Arena</p></td>
-                </tr>
-                <tr>
-                    <td><p>腾云俱乐部</p></td>
-                </tr>
-                <tr>
-                    <td><p>首届大数据竞技比赛</p></td>
-                </tr>
-                <tr>
-                    <td><div>我要报名</div></td>
-                </tr>
-            </table>
+        <div class="ty_apply con_info_banner"></div>
+
+        <div class="con_info_context">
+            <p class="bread">竞赛>“优易数据杯”全国开放大数据创新创意大赛><span>数据获取</span></p>
+            <h1>竞赛协议</h1>
         </div>
-        <div class="ty_contest">
-            <h3>竞赛项目</h3>
-            <div class="ty_contestDetail">
-                <div class="wid_35 fl">
-                    <img src="../images/shouye/contest.png" alt=""/>
-                </div>
-                <div class="wid_60 fr">
-                    <h4>“优易数据杯”全国开放大数据创新创意大赛</h4>
-                    <h5>信优易数据有限公司</h5>
-                    <p>很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下 拷贝 2
-                        很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下
-                        很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下
-                        很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下
-                        很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨
-                    </p>
-                    <div class="ty_contestShare">
-                        <div class="fr">
-                            <span>分享到：</span>
-                            <img src="../images/shouye/weixin.png" alt=""/>
-                            <img src="../images/shouye/weibo.png" alt=""/>
-                            <img src="../images/shouye/qq.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div id="contest_data_t">
+              <p>互联网金融近年来异常火热，大量的资本和人才涌入这个领域发掘富藏价值。金融领域无论是投资理财还是借贷放款，风险控制永远是业务的核心基础。而在所有的互联网金融产品中，微额借款（借款金额500元~1000元）因其主要服务对象的特殊性，被公认为是风险最高的细分领域。本次比赛的主题是通过数据挖掘来分析”小额微贷“申请借款用户的信用状况，以分析其是否逾期。<br>
+        
+
+                微额速达（上海）金融信息服务有限公司成立于2014年9月，拥有一支优秀的超高水平技术开发团队，旗下主打产品“现金巴士”通过大数据技术分析海量数据信息，为个人和企业提供快速信用评估服务，以及为促成个人与个人之间发生微小额度借款交易，提供金融信息服务的平台。团队中有超过十年创业经验的连续创业者，来自全球顶级FinTech公司的大数据风控专家，互联网和移动互联网领域的IT技术高手和经验丰富的客户服务专家。<br>
+        
+                在中国，普通人的信用记录往往是缺失的，有的人甚至没有信用卡，即使去央行征信中心查询，很可能也是没有信用记录。如何迅速判断借款人的还款能力和意愿，提供无抵押的借款，对于金融信息服务来说是一个巨大的挑战。这也正是现金巴士努力填补的市场空缺。<br>
+
+                2015年1月，现金巴士上线后一个月，就拿到了启明创投和华创资本共同投资的500万美元A轮投资。<br>
+    
+
+                本次比赛共设排名奖6名，最终排名取综合线上排名以及线下答辩评分；另设4个特别奖，用于奖励有特别新颖解决方案的团队。<br>
+                各奖金设置如下： <br>
+
+
+                本次竞赛提供了气象的多维度数据，要求参赛者对气象以及其他有关的数据进行深度挖掘，探索气象数据可能的使用场景、对应的市场空间、业务（产品或服务）运作方式，以及所需的其他数据及资源支持，最终形成基于气象数据的应用或商业创新的方案。 <br>
+     
+                创意方案可以是但不限于市场需求文档（MRD）、产品需求文档（PRD）、最简化可实行产品（MVP）、商业计划书（BP）、以及其他研究报告等不同方向及深度的方案。  <br>
+
+                为了主办方更好地了解参赛团队方案，方案可参考但不限于以下内容（不出现团队任何信息)： <br>
+                方案摘要：对方案进行整体介绍；  <br>
+                数据及技术使用：描述所使用的数据全体（包括自带外部数据)、数据处理和应用时使用的主要技术和方法； <br> 
+                创意描述：完整描述气象数据价值挖掘的思路、数据应用价值展示，以及商业创新性构思。<br>
+        
+
+
+              </p>      
         </div>
-        <div class="ty_recommend">
-            <h3>精华推荐</h3>
-            <div class="ty_recommendDetail">
-                <div class="wid_30 fl">
-                    <img src="../images/shouye/contest.png" alt=""/>
-                    <h5>比赛技巧</h5>
-                    <p>很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下</p>
-                </div>
-                <div class="wid_30 fl mg5">
-                    <img src="../images/shouye/contest.png" alt=""/>
-                    <h5>数据解析</h5>
-                    <p>很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下</p>
-                </div>
-                <div class="wid_30 fr">
-                    <img src="../images/shouye/contest.png" alt=""/>
-                    <h5>如何成为一名优秀的程序猿</h5>
-                    <p>很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下如何为比赛做准备，很多同学杜威怎么参加比赛而烦恼，那么今天我们就探讨一下杜威怎么参加比赛而烦恼</p>
-                </div>
-            </div>
+        
+        <div class="contest_data">
+            <p><input type="checkbox">&nbsp我同意以上协议</p>
+
+            <a href="#">下载数据</a>
         </div>
+
     </div>
 
     <div class="wid_100 bg_deepBlue">
@@ -187,6 +165,8 @@
             <div class="ty_registerBtn"><button>完成</button></div>
             <div class="ty_weixinLogin"><button>使用微信登录</button></div>
         </div>
+
+        
     </div>
 </body>
 </html>

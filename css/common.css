@@ -30,6 +30,8 @@ body{width: 100%;height: 100%;/*background-color: #0000ff;*/min-width: 980px;}
 .posA{position: absolute;}
 .posR{position: relative}
 
+/*.zIndex-1{z-index: -1;}
+.zIndex999{z-index: 999;}*/
 
 
 /* 导航、底部 共用 */
